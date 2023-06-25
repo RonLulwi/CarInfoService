@@ -9,8 +9,17 @@ public class CarBoundary {
     private String color;
     private String finishLevel;
     private String currentOwnership;
+    private String imagePath;
 
     public CarBoundary() {
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 
     public String getLicenseNumber() {

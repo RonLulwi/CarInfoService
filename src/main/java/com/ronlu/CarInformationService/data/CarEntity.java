@@ -25,7 +25,18 @@ public class CarEntity {
     @Column(name = "current_ownership")
     private String currentOwnership;
 
+    @Column(name = "image_path")
+    private String imagePath;
+
     public CarEntity() {
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 
     public String getLicenseNumber() {
@@ -94,6 +105,7 @@ public class CarEntity {
                 ", color='" + color + '\'' +
                 ", finishLevel='" + finishLevel + '\'' +
                 ", currentOwnership='" + currentOwnership + '\'' +
+                ", imagePath='" + imagePath + '\'' +
                 '}';
     }
 }

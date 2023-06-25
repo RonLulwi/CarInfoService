@@ -17,6 +17,7 @@ public class CarConvertor {
         entity.setColor(boundary.getColor());
         entity.setFinishLevel(boundary.getFinishLevel());
         entity.setCurrentOwnership(boundary.getCurrentOwnership());
+        entity.setImagePath(boundary.getImagePath());
         return entity;
     }
 
@@ -30,6 +31,7 @@ public class CarConvertor {
         boundary.setColor(entity.getColor());
         boundary.setFinishLevel(entity.getFinishLevel());
         boundary.setCurrentOwnership(entity.getCurrentOwnership());
+        boundary.setImagePath(entity.getImagePath());
         return boundary;
     }
 
